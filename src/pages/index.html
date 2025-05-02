@@ -2,158 +2,229 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../output.css">
-    <title>Aurora Moncada</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../output.css">
+  <title>Aurora Moncada</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
 
+
+
+
+
+  <!-- -->
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="./index.html" class="text-xl font-semibold tracking-wide text-gray-800">
+            <!-- Puedes reemplazar este texto por una imagen -->
+            Aurora Moncada
+          </a>
+        </div>
+
+        <!-- Botón para menú móvil -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navegación desktop -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="./index.html" class="text-gray-700 hover:text-black transition">Inicio</a>
+          <a href="./productos.html" class="text-gray-700 hover:text-black transition">Productos</a>
+          <a href="./mitosLeyendas.html" class="text-gray-700 hover:text-black transition">Mitos y Leyendas</a>
+          <a href="./contacto.html" class="text-gray-700 hover:text-black transition">Contacto</a>
+        </nav>
+      </div>
+
+      <!-- Menú móvil -->
+      <div id="mobile-menu" class="md:hidden hidden mt-2">
+        <nav class="flex flex-col space-y-2">
+          <a href="./index.html" class="text-gray-700 hover:text-black transition">Inicio</a>
+          <a href="./productos.html" class="text-gray-700 hover:text-black transition">Productos</a>
+          <a href="./mitosLeyendas.html" class="text-gray-700 hover:text-black transition">Mitos y Leyendas</a>
+          <a href="./contacto.html" class="text-gray-700 hover:text-black transition">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+<!-- Carrusel -->
+<section class="bg-white py-16">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-gray-800 mb-10">
+      El viaje de lo ancestral
+    </h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+      
+        <div class="swiper-slide">
+          <img src="../../public/images/carousel/c1.jpg" alt="Imagen 1" class="w-full h-96 object-cover rounded-lg shadow-md">
+          <p class="mt-4 text-gray-700 italic text-base sm:text-lg max-w-xl mx-auto font-light">
+            “Donde nace el sol, renace la memoria de los dioses.”
+          </p>
+        </div>
+
+      
+        <div class="swiper-slide">
+          <img src="../../public/images/carousel/c2.jpg" alt="Imagen 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+          <p class="mt-4 text-gray-700 italic text-base sm:text-lg max-w-xl mx-auto font-light">
+            “El cosmos habla en símbolos, y la tela los recuerda.”
+          </p>
+        </div>
+
+      
+        <div class="swiper-slide">
+          <img src="../../public/images/carousel/c3.jpg" alt="Imagen 3" class="w-full h-96 object-cover rounded-lg shadow-md">
+          <p class="mt-4 text-gray-700 italic text-base sm:text-lg max-w-xl mx-auto font-light">
+            “Cada estrella bordada evoca una historia olvidada.”
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+      <!-- Título -->
+      <h2 class="text-3xl sm:text-4xl font-light font-serif mb-2">Pre-Otoño 2025</h2>
+      <p class="text-sm uppercase text-gray-500 tracking-widest mb-12">HOMBRE</p>
+
+      <!-- Grid de productos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Producto 1 -->
+        <div class="text-center">
+          <img src="../../public/images/productos/Prenda 3.png" alt="Bolsa Neverefull" class="mx-auto mb-4">
+          <p class="text-sm font-light">Bolsa Neverefull</p>
+          <p class="text-sm text-gray-700">MXN 64,500.00</p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="text-center">
+          <img src="../../public/images/productos/Prenda 9.png" alt="Mule LV Oasis" class="mx-auto mb-4">
+          <p class="text-sm font-light">Mule LV Oasis</p>
+          <p class="text-sm text-gray-700">MXN 16,400.00</p>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="text-center">
+          <img src="../../public/images/productos/Prenda 3.png" alt="Sudadera bordada" class="mx-auto mb-4">
+          <p class="text-sm font-light">Sudadera con motivo bordado</p>
+          <p class="text-sm text-gray-700">MXN 41,000.00</p>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="text-center">
+          <img src="../../public/images/productos/Prenda 4.png" alt="Tenis Run Away" class="mx-auto mb-4">
+          <p class="text-sm font-light">Tenis Run Away</p>
+          <p class="text-sm text-gray-700">MXN 23,200.00</p>
+        </div>
+      </div>
+
+      <!-- Botón -->
+      <div class="mt-12">
+        <button
+          class="mt-4 border border-black px-6 py-2 rounded-full text-sm hover:bg-black hover:text-white transition">
+          Descubrir la Colección
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[750px]">
+    <img src="../../public/images/mitosLeyendas/sergei-a-w8dZ20O9XPI-unsplash.jpg" 
+         alt="Fondo de mitos y leyendas"
+         class="absolute inset-0 w-full h-full object-cover z-0" />
+  
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+  
+    <!-- Texto centrado con animación -->
+    <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6"
+         data-aos="fade-up">
+      <h2 class="text-4xl sm:text-5xl font-serif font-semibold text-white drop-shadow-md">
+        Mitos y Leyendas
+      </h2>
+      <p class="mt-4 text-white text-base sm:text-lg max-w-xl font-light drop-shadow-sm">
+        Relatos ancestrales que inspiran cada prenda. Una conexión entre símbolos, raíces y diseño.
+      </p>
+      <div class="mt-12">
+        <button
+          class="mt-4 border border-white text-white px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition drop-shadow-sm">
+          Descubrir la Colección
+        </button>
+      </div>
+    </div>
+  </section>
   
 
-  
 
-<!-- -->
-      
-        <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-16">
-            
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-                <a href="./index.html" class="text-xl font-semibold tracking-wide text-gray-800">
-                  <!-- Puedes reemplazar este texto por una imagen -->
-                  Aurora Moncada
-                </a>
-              </div>
-        
-              <!-- Botón para menú móvil -->
-              <div class="md:hidden">
-                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
-                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
-        
-              <!-- Navegación desktop -->
-              <nav class="hidden md:flex space-x-6">
-                <a href="./index.html" class="text-gray-700 hover:text-black transition">Inicio</a>
-                <a href="./productos.html" class="text-gray-700 hover:text-black transition">Productos</a>
-                <a href="./mitosLeyendas.html" class="text-gray-700 hover:text-black transition">Mitos y Leyendas</a>
-                <a href="./contacto.html" class="text-gray-700 hover:text-black transition">Contacto</a>
-              </nav>
-            </div>
-            
-            <!-- Menú móvil -->
-            <div id="mobile-menu" class="md:hidden hidden mt-2">
-              <nav class="flex flex-col space-y-2">
-                <a href="./index.html" class="text-gray-700 hover:text-black transition">Inicio</a>
-                <a href="./productos.html" class="text-gray-700 hover:text-black transition">Productos</a>
-                <a href="./mitosLeyendas.html" class="text-gray-700 hover:text-black transition">Mitos y Leyendas</a>
-                <a href="./contacto.html" class="text-gray-700 hover:text-black transition">Contacto</a>
-              </nav>
-            </div>
-          </div>
-        </header>
-      
-        
-        <section class="bg-white py-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          
-              <!-- Título -->
-              <h2 class="text-3xl sm:text-4xl font-light font-serif mb-2">Pre-Otoño 2025</h2>
-              <p class="text-sm uppercase text-gray-500 tracking-widest mb-12">HOMBRE</p>
-          
-              <!-- Grid de productos -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <!-- Producto 1 -->
-                <div class="text-center">
-                  <img src="../../public/images/productos/Prenda 3.png" alt="Bolsa Neverefull" class="mx-auto mb-4">
-                  <p class="text-sm font-light">Bolsa Neverefull</p>
-                  <p class="text-sm text-gray-700">MXN 64,500.00</p>
-                </div>
-          
-                <!-- Producto 2 -->
-                <div class="text-center">
-                  <img src="../../public/images/productos/Prenda 9.png" alt="Mule LV Oasis" class="mx-auto mb-4">
-                  <p class="text-sm font-light">Mule LV Oasis</p>
-                  <p class="text-sm text-gray-700">MXN 16,400.00</p>
-                </div>
-          
-                <!-- Producto 3 -->
-                <div class="text-center">
-                  <img src="../../public/images/productos/Prenda 3.png" alt="Sudadera bordada" class="mx-auto mb-4">
-                  <p class="text-sm font-light">Sudadera con motivo bordado</p>
-                  <p class="text-sm text-gray-700">MXN 41,000.00</p>
-                </div>
-          
-                <!-- Producto 4 -->
-                <div class="text-center">
-                  <img src="../../public/images/productos/Prenda 4.png" alt="Tenis Run Away" class="mx-auto mb-4">
-                  <p class="text-sm font-light">Tenis Run Away</p>
-                  <p class="text-sm text-gray-700">MXN 23,200.00</p>
-                </div>
-              </div>
-          
-              <!-- Botón -->
-              <div class="mt-12">
-                <button class="mt-4 border border-black px-6 py-2 rounded-full text-sm hover:bg-black hover:text-white transition">
-                  Descubrir la Colección
-                </button>
-              </div>
-            </div>
-          </section>
-          
-          <section class="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[750px]">
-            <img src="../../public/images/mitosLeyendas/sergei-a-w8dZ20O9XPI-unsplash.jpg" 
-                 alt="Fondo de mitos y leyendas"
-                 class="absolute inset-0 w-full h-full object-cover z-0" />
-          
-            <!-- Fondo negro translúcido -->
-            <div class="absolute inset-0 bg-black/60 z-10"></div>
-          
-            <!-- Texto centrado -->
-            <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6">
-              <h2 class="text-4xl sm:text-5xl font-serif font-semibold text-white drop-shadow-md">
-                Mitos y Leyendas
-              </h2>
-              <p class="mt-4 text-white text-base sm:text-lg max-w-xl font-light drop-shadow-sm">
-                Relatos ancestrales que inspiran cada prenda. Una conexión entre símbolos, raíces y diseño.
-              </p>
-              <div class="mt-12">
-                <button class="mt-4 border border-white px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition text-white">
-                  Descubrir la Colección
-                </button>
-              </div>
-            </div>
-          </section>
-          
-          
-          </section>
-          
-          
-        
-        
-          
-          
-          
-          
-          
-      
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+  AOS.init({
+    duration: 1500,
+    once: false
+  })
+
+  
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    autoplay: { delay: 3000 },
+    pagination: { el: '.swiper-pagination' },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 
