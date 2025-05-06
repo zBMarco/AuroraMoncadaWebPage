@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tienda-navbar {
+    background-color: #eaeaea;
+    padding: 15px;
+  }
+  
+  .tienda-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tienda-opcion,
+  .tienda-opcion-activa {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .tienda-opcion-activa {
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+  }
+  
+  .tienda-principal {
+    padding: 30px;
+  }
+  
+  .tienda-producto {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .producto-imagen {
+    width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .producto-detalles {
+    max-width: 400px;
+  }
+  
+  .producto-nombre {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .producto-precio {
+    color: #e60000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .producto-descripcion,
+  .producto-leyenda {
+    margin: 10px 0;
+  }
+  
+  .producto-label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .producto-select {
+    margin-top: 5px;
+    padding: 6px;
+    width: 100%;
+  }
+  
+  .producto-boton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .tienda-cesta {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+  }
+  
+  .cesta-titulo {
+    margin-bottom: 10px;
+  }
+  
+  .cesta-item,
+  .cesta-detalle {
+    margin: 5px 0;
+  }
+  
+  .cesta-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .cesta-boton {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .cesta-enviar {
+    margin-top: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tienda-contacto {
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 20px;
+  }
+  
+  .contacto-titulo {
+    margin-bottom: 5px;
+  }
+  
+  .contacto-info {
+    color: #333;
+  }
+  
