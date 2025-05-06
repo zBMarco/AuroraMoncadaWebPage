@@ -241,42 +241,9 @@
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-
-    AOS.init({
-      duration: 1500,
-      once: false
-    })
-
-    const swiper = new Swiper('.mySwiper', {
-      loop: true,
-      autoplay: { delay: 3000 },
-      pagination: { el: '.swiper-pagination' },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-
-    let menuOpen = false; 
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleBtn = document.getElementById('menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      toggleBtn.addEventListener('click', () => {
-        menuOpen = !menuOpen;
-        if (menuOpen) {
-          mobileMenu.classList.remove('translate-x-full');
-          mobileMenu.classList.add('translate-x-0');
-        } else {
-          mobileMenu.classList.remove('translate-x-0');
-          mobileMenu.classList.add('translate-x-full');
-        }
-      });
-    });
-
-  </script>
+  <script src="../js/navbar-movil.js"></script>
+  <script src="../js/swiper.js"></script>
+ 
 </body>
 
 </html>
