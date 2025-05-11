@@ -1,150 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../output.css">
+  <title>Aurora Moncada</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Aurora Moncada - Coleccion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
+
 <body>
-     <!-- Header -->
+  <header class="bg-[url('../../public/images/header2.jpg')] bg-cover bg-center shadow-md">
+    <div class="bg-black/50"> <!-- capa oscura opcional -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 text-white">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="./index.html" class="text-xl font-semibold tracking-wide">
+              Aurora Moncada
+            </a>
+          </div>
 
-     <div class="contenedor_navegacion">
-        <div class="contenedor_logo">
-            <div class="logo">Aurora Moncada</div>
-            <div class="contenedor_nav">
-                <div class="nav_contain">
-                    <nav><a href="../index.html">Inicio</a></nav>
-                    <nav><a href="../secciones/productos.html">Productos</a></nav>
-                    <nav><a href="../secciones/mitosLeyendas.html">Mitos y Leyendas</a></nav>
-                    <nav><a href="../secciones/contacto.html">Contacto</a></nav>
-                </div>
+          <!-- Botón móvil -->
+          <div class="md:hidden relative z-[9999]"> <!-- z-index más alto -->
+            <button id="menu-toggle" class="relative z-[9999] text-white focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
 
-            </div>
+
+          <!-- Menú desktop -->
+          <nav class="hidden md:flex space-x-6">
+            <a href="./index.html" class="hover:text-gray-300 transition">Inicio</a>
+            <a href="./productos.html" class="hover:text-gray-300 transition">Productos</a>
+            <a href="./mitosLeyendas.html" class="hover:text-gray-300 transition">Mitos y Leyendas</a>
+            <a href="./contacto.html" class="hover:text-gray-300 transition">Contacto</a>
+          </nav>
         </div>
-        <div class="contenedor_frase">
-            <p class="frase">-Escuchemos nuestro corazón, demos paso a la creatividad y nunca dejar de ser "humano"
-                ante cualquier situacion.</p>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Menú móvil -->
+  <div id="mobile-menu"
+    class="fixed top-0 right-0 h-full w-64 bg-zinc-900 text-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+    <div class="p-6 space-y-4 flex flex-col">
+      <a href="./index.html" class="hover:text-rose-600 transition">Inicio</a>
+      <a href="./productos.html" class="hover:text-rose-600 transition">Productos</a>
+      <a href="./mitosLeyendas.html" class="hover:text-rose-600transition">Mitos y Leyendas</a>
+      <a href="./contacto.html" class="hover:text-rose-600 transition">Contacto</a>
+    </div>
+  </div>
+
+  
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl font-light font-serif mb-2">Titulo de la coleccion</h2>
+    <p class="text-sm uppercase text-gray-500 tracking-widest mb-12">MUJER</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      
+      <!-- Producto 1 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="../pages/productos/productoPrenda1.html">
+            <img src="../../public/images/productosPrincipales/prenda1modelo.png" alt="Producto 1"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
         </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="../pages/productos/productoPrenda2.html">
+            <img src="../../public/images/productosPrincipales/Prenda2Modelo.png" alt="Producto 2"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
+        </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="../pages/productos/productoPrenda3.html">
+            <img src="../../public/images/productosPrincipales/Prenda3Modelo.png" alt="Producto 3"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
+        </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="../pages/productos/productoPrenda4.html"></a>
+            <img src="../../public/images/productosPrincipales/prenda4cmodelo1.png" alt="Producto 4"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
+        </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="./detalle5.html">
+            <img src="../../public/images/productosPrincipales/Prenda1Modelo2.png" alt="Producto 5"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
+        </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="./detalle6.html">
+            <img src="../../public/images/productosPrincipales/Prenda2Modelo1.png" alt="Producto 6"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
+        </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
+
+      <!-- Producto 7 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="./detalle7.html">
+            <img src="../../public/images/productosPrincipales/Prenda3Modelo1.png" alt="Producto 7"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
+        </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
+
+      <!-- Producto 8 -->
+      <div class="text-center">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <a href="./detalle8.html">
+            <img src="../../public/images/productosPrincipales/Prenda4Modelo1.png" alt="Producto 8"
+              class="h-full object-contain hover:scale-105 transition-transform duration-200" />
+          </a>
+        </div>
+        <p class="text-sm font-light mt-2">Nombre del producto</p>
+        <p class="text-sm text-gray-700">MXN 64,500.00</p>
+      </div>
 
     </div>
-    <h1 class="title_product">Conoce Nuestra Coleccion</h1>
-    <!-- Productos Muestra-->
-    <hr>
+  </div>
+</section>
 
 
-    <div class="galeriaProductos">
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 1 .png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$</p>
-            </div>
-        </div>
+ 
 
 
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 2.png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$$</p>
-            </div>
+  <footer class="bg-black text-white py-12 px-12" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-sm">
 
-        </div>
+      <!-- Marca -->
+      <div>
+        <h3 class="text-2xl font-serif font-semibold mb-2">Aurora Moncada</h3>
+        <p class="text-gray-400 font-light">
+          Inspiración ancestral plasmada en cada prenda. Textiles con historia y alma.
+        </p>
+      </div>
 
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 3.png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$$</p>
-            </div>
+      <!-- Contacto -->
+      <div>
+        <h4 class="text-base font-semibold mb-2">Contacto</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><i class="fa-solid fa-phone mr-2 text-sm text-green-400"></i>Tel: +52 55 1234 5678</li>
+          <li><i class="fa-solid fa-envelope mr-2 text-sm text-blue-400"></i>auroramoncada@example.com</li>
+          <li><i class="fa-brands fa-whatsapp mr-2 text-sm text-green-400"></i>Pedidos por WhatsApp</li>
+          <li><i class="fa-brands fa-instagram mr-2 text-pink-400"></i><a href="https://instagram.com/auroramoncada"
+              target="_blank" class="hover:underline">Instagram</a></li>
+          <li><i class="fa-brands fa-facebook mr-2 text-blue-500"></i><a href="https://facebook.com/auroramoncada"
+              target="_blank" class="hover:underline">Facebook</a></li>
+        </ul>
+      </div>
 
-        </div>
-
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 4.png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$$</p>
-            </div>
-
-        </div>
-
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 5.png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$</p>
-            </div>
-        </div>
-
-
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 6.png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$$</p>
-            </div>
-
-        </div>
-
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 7.png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$$</p>
-            </div>
-
-        </div>
-
-        <div class="card_producto">
-            <div class="img_producto"><img src="../img/productosv1/Prenda 8.png" alt=""></div>
-            <div class="inf_producto">
-                <p>Nombre de la prenda/color</p>
-                <p>$$$$</p>
-            </div>
-
-        </div>
+      <!-- Ayuda -->
+      <div>
+        <h4 class="text-base font-semibold mb-2">Ayuda y Atención</h4>
+        <p class="text-gray-300">
+          Dudas, pedidos personalizados o información adicional, escríbenos directo por WhatsApp.
+        </p>
+        <a href="https://wa.me/5215512345678" target="_blank"
+          class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+          Enviar mensaje
+        </a>
+      </div>
 
     </div>
 
-
-    
-    <footer class="footer">
-        <div class="info_contact">
-            <div class="footer_icon">
-                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-            </div>
-            <div class="footer_p">
-                <p>Informacion de envios</p>
-            </div>
-        </div>
-
-        <div class="info_contact">
-            <div class="footer_icon">
-                <i class="fa-regular fa-address-book fa-flip-horizontal fa-2xl" style="color: #ffffff;"></i>
-            </div>
-            <div class="footer_p">
-                <p>¿Necesitas ayuda? Inicia un chat con nosotros por WhatsApp</p>
-            </div>
-        </div>
-
-        <div class="info_contact">
-            <div class="footer_icon">
-                <i class="fa-solid fa-phone fa-2xl"></i>
-            </div>
-            <div class="footer_p">
-                <p>Nuestro Horario de contacto es de: </p>
-            </div>
-        </div>
-    </footer>
+    <div class="mt-10 text-center text-gray-500 text-xs">
+      &copy; 2025 Aurora Moncada · Todos los derechos reservados.
+    </div>
+  </footer>
 
 
+
+
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/navbar-movil.js"></script>
+  <script src="../js/swiper.js"></script>
+ 
 </body>
+
 </html>
