@@ -1,122 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../output.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <title>Mitos y Leyendas</title>
 </head>
-<body>
-     <!-- Header -->
 
-     <div class="contenedor_navegacion">
-        <div class="contenedor_logo">
-            <div class="logo">Aurora Moncada</div>
-            <div class="contenedor_nav">
-                <div class="nav_contain">
-                    <nav><a href="../index.html">Inicio</a></nav>
-                    <nav><a href="productos.html">Productos</a></nav>
-                    <nav><a href="mitosLeyendas.html">Mitos y Leyendas</a></nav>
-                    <nav><a href="contacto.html">Contacto</a></nav>
+<body class="m-0">
+
+    <header class="bg-[url('../../public/images/header2.jpg')] bg-cover bg-center shadow-md">
+        <div class="bg-black/50"> <!-- capa oscura opcional -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16 text-white">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="./index.html" class="text-xl font-semibold tracking-wide">
+                            Aurora Moncada
+                        </a>
+                    </div>
+
+                    <!-- Botón móvil -->
+                    <div class="md:hidden relative z-[9999]"> <!-- z-index más alto -->
+                        <button id="menu-toggle" class="relative z-[9999] text-white focus:outline-none">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <!-- Menú desktop -->
+                    <nav class="hidden md:flex space-x-6">
+                        <a href="./index.html" class="hover:text-gray-300 transition">Inicio</a>
+                        <a href="./productos.html" class="hover:text-gray-300 transition">Productos</a>
+                        <a href="./mitosLeyendas.html" class="hover:text-gray-300 transition">Mitos y Leyendas</a>
+                        <a href="./contacto.html" class="hover:text-gray-300 transition">Contacto</a>
+                    </nav>
                 </div>
-
             </div>
         </div>
-        <div class="contenedor_frase">
-            <p class="frase">-Escuchemos nuestro corazón, demos paso a la creatividad y nunca dejar de ser "humano"
-                ante cualquier situacion.</p>
-        </div>
+    </header>
+
+
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 mx-12 my-10">
+
+        <!-- Card 1 -->
+        <a href="/mitos/jaguar" class="block" data-aos="fade-up" data-aos-delay="100">
+            <div
+                class="bg-gray-900 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-transform duration-300 ease-in-out min-h-[460px]">
+                <div class="p-4">
+                    <img src="../../public/images/mitosLeyendas/prenda1.jpg" alt="El Mito del Jaguar"
+                        class="w-full h-52 object-cover">
+                </div>
+                <div class="px-4 pb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-white">El Mito del Jaguar</h3>
+                    <p class="text-gray-300 text-sm">Cuenta la leyenda que el jaguar era un guardián de los secretos del
+                        bosque, protector de lo sagrado.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="/mitos/dama-lago" class="block" data-aos="fade-up" data-aos-delay="200">
+            <div
+                class="bg-gray-900 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-transform duration-300 ease-in-out min-h-[460px]">
+                <div class="p-4">
+                    <img src="../../public/images/mitosLeyendas/prenda1.jpg" alt="La Dama del Lago"
+                        class="w-full h-52 object-cover">
+                </div>
+                <div class="px-4 pb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-white">La Dama del Lago</h3>
+                    <p class="text-gray-300 text-sm">Una mujer vestida de agua aparece en noches de luna llena para
+                        guiar a los viajeros perdidos.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="/mitos/fuego-cielo" class="block" data-aos="fade-up" data-aos-delay="300">
+            <div
+                class="bg-gray-900 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-transform duration-300 ease-in-out min-h-[460px]">
+                <div class="p-4">
+                    <img src="../../public/images/mitosLeyendas/prenda1.jpg" alt="El Fuego del Cielo"
+                        class="w-full h-52 object-cover">
+                </div>
+                <div class="px-4 pb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-white">El Fuego del Cielo</h3>
+                    <p class="text-gray-300 text-sm">Los ancestros creían que los relámpagos eran mensajes de los dioses
+                        al pueblo.</p>
+                </div>
+            </div>
+        </a>
 
     </div>
 
-    <main class="mitosLeyendas">
-        <section class="card_mitosLeyendas">
-            <div class="card_info">
-                <div class="card_descrip">
-                    <p class="subtitle">Mitos y Leyendas de Origen Mexicano</p>
-                    <p class="title">Conoce el mito del conejo de la luna, una de las leyendas mas populares </p>
-                </div>
-                <div class="card_date">
-                    <p>14 de Octubre del 2024</p>
-                </div>
-            </div>
-            <div class="card_imagen">
-                <img src="zoltan-tasi-0khu-rgbjzo-unsplash.jpg" alt="">
-            </div>
-        </section>
-
-        <section class="card_mitosLeyendas">
-            <div class="card_info">
-                <div class="card_descrip">
-                    <p class="subtitle">Mitos y Leyendas Asiaticos</p>
-                    <p class="title">Aka Allghoi Khorhoi Esta terrorífica criatura mitológica de Mongolia</p>
-                </div>
-                <div class="card_date">
-                    <p>14 de Julio del 2013</p>
-                </div>
-            </div>
-            <div class="card_imagen">
-                <img src="zoltan-tasi-0khu-rgbjzo-unsplash.jpg" alt="">
-            </div>
-        </section>
-
-        <section class="card_mitosLeyendas">
-            <div class="card_info">
-                <div class="card_descrip">
-                    <p class="subtitle">Mitos y Leyendas Europeos</p>
-                    <p class="title">Conoce el mito del conejo de la luna, una de las leyendas mas populares </p>
-                </div>
-                <div class="card_date">
-                    <p>14 de Octubre del 2024</p>
-                </div>
-            </div>
-            <div class="card_imagen">
-                <img src="zoltan-tasi-0khu-rgbjzo-unsplash.jpg" alt="">
-            </div>
-        </section>
-
-        
 
 
-    </main>
+    <footer class="bg-black text-white py-12 px-12 mb-0" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-sm">
 
+            <!-- Marca -->
+            <div>
+                <h3 class="text-2xl font-serif font-semibold mb-2">Aurora Moncada</h3>
+                <p class="text-gray-400 font-light">
+                    Inspiración ancestral plasmada en cada prenda. Textiles con historia y alma.
+                </p>
+            </div>
 
-    
-    <footer class="footer">
-        <div class="info_contact">
-            <div class="footer_icon">
-                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            <!-- Contacto -->
+            <div>
+                <h4 class="text-base font-semibold mb-2">Contacto</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><i class="fa-solid fa-phone mr-2 text-sm text-green-400"></i>Tel: +52 55 1234 5678</li>
+                    <li><i class="fa-solid fa-envelope mr-2 text-sm text-blue-400"></i>auroramoncada@example.com</li>
+                    <li><i class="fa-brands fa-whatsapp mr-2 text-sm text-green-400"></i>Pedidos por WhatsApp</li>
+                    <li><i class="fa-brands fa-instagram mr-2 text-pink-400"></i><a
+                            href="https://instagram.com/auroramoncada" target="_blank"
+                            class="hover:underline">Instagram</a></li>
+                    <li><i class="fa-brands fa-facebook mr-2 text-blue-500"></i><a
+                            href="https://facebook.com/auroramoncada" target="_blank"
+                            class="hover:underline">Facebook</a></li>
+                </ul>
             </div>
-            <div class="footer_p">
-                <p>Informacion de envios</p>
+
+            <!-- Ayuda -->
+            <div>
+                <h4 class="text-base font-semibold mb-2">Ayuda y Atención</h4>
+                <p class="text-gray-300">
+                    Dudas, pedidos personalizados o información adicional, escríbenos directo por WhatsApp.
+                </p>
+                <a href="https://wa.me/5215512345678" target="_blank"
+                    class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+                    Enviar mensaje
+                </a>
             </div>
+
         </div>
 
-        <div class="info_contact">
-            <div class="footer_icon">
-                <i class="fa-regular fa-address-book fa-flip-horizontal fa-2xl" style="color: #ffffff;"></i>
-            </div>
-            <div class="footer_p">
-                <p>¿Necesitas ayuda? Inicia un chat con nosotros por WhatsApp</p>
-            </div>
-        </div>
-
-        <div class="info_contact">
-            <div class="footer_icon">
-                <i class="fa-solid fa-phone fa-2xl"></i>
-            </div>
-            <div class="footer_p">
-                <p>Nuestro Horario de contacto es de: </p>
-            </div>
+        <div class="mt-10 text-center text-gray-500 text-xs">
+            &copy; 2025 Aurora Moncada · Todos los derechos reservados.
         </div>
     </footer>
 
-    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: false
+        })
+    </script>
+
 </body>
+
 </html>
