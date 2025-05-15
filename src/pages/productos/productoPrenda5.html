@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aurora Moncada - Producto</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../output.css">
+  <title>Aurora Moncada</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     body {
       font-family: 'Raleway', sans-serif;
@@ -69,22 +78,22 @@
   
     <div class="hidden md:block no-scrollbar md:overflow-y-scroll md:h-screen">
         <div class="grid grid-cols-2 gap-1 md:h-screen">
-          <img src="../../public/images/productosPrincipales/Prenda2.png" class="w-full h-full object-cover p-2" />
-          <img src="../../public/images/productosPrincipales/Prenda2.1.png" class="w-full h-full object-cover p-2" />
+          <img src="../../../public/images/productosPrincipales/Prenda2.png" class="w-full h-full object-cover p-2" />
+          <img src="../../../public/images/productosPrincipales/Prenda2.1.png" class="w-full h-full object-cover p-2" />
         </div>
         <div class="grid grid-cols-2 gap-1 md:h-screen">
-          <img src="../../public/images/productosPrincipales/Prenda2Modelo.png" class="w-full h-full object-cover p-2" />
-          <img src="../../public/images/productosPrincipales/Prenda2Modelo1.png" class="w-full h-full object-cover p-2" />
+          <img src="../../../public/images/productosPrincipales/Prenda2Modelo.png" class="w-full h-full object-cover p-2" />
+          <img src="../../../public/images/productosPrincipales/Prenda2Modelo1.png" class="w-full h-full object-cover p-2" />
         </div>
       </div>
       
   
     <!-- Carrusel horizontal (solo visible en móviles) -->
     <div class="md:hidden flex overflow-x-auto snap-x snap-mandatory space-x-4 p-4 no-scrollbar">
-      <img src="../../public/images/productosPrincipales/Prenda2.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../public/images/productosPrincipales/Prenda2Modelo1.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../public/images/productosPrincipales/Prenda2.1.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../public/images/productosPrincipales/Prenda2Modelo.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <img src="../../../public/images/productosPrincipales/Prenda2.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <img src="../../../public/images/productosPrincipales/Prenda2Modelo1.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <img src="../../../public/images/productosPrincipales/Prenda2.1.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <img src="../../../public/images/productosPrincipales/Prenda2Modelo.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
     </div>
   
   </div>
@@ -125,7 +134,10 @@
             Leyenda
           </button>
           <div id="leyenda" class="mt-2 hidden text-sm italic text-gray-600 text-left">
-            El que la usa emite paz y confianza.
+            <p class=" text-sm leading-relaxed">
+                        En el Quinto Sol, los dioses nos dieron una última oportunidad. Solo si escuchamos nuestro
+                        corazón y vivimos con creatividad, podremos cumplir el propósito del Teotl.
+                    </p>
           </div>
         </div>
       </div>
@@ -183,8 +195,10 @@
   </style>
   
   <!-- Footer -->
-  <footer class="bg-black text-white py-12 px-12">
+  <footer class="bg-black text-white py-12 px-12" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-sm">
+
+      <!-- Marca -->
       <div>
         <h3 class="text-2xl font-serif font-semibold mb-2">Aurora Moncada</h3>
         <p class="text-gray-400 font-light">
@@ -192,27 +206,32 @@
         </p>
       </div>
 
+      <!-- Contacto -->
       <div>
         <h4 class="text-base font-semibold mb-2">Contacto</h4>
         <ul class="space-y-2 text-gray-300">
-          <li>Tel: +52 55 1234 5678</li>
-          <li>auroramoncada@example.com</li>
-          <li>Pedidos por WhatsApp</li>
-          <li><a href="https://instagram.com/auroramoncada" target="_blank" class="hover:underline">Instagram</a></li>
-          <li><a href="https://facebook.com/auroramoncada" target="_blank" class="hover:underline">Facebook</a></li>
+          <li><i class="fa-solid fa-phone mr-2 text-sm text-green-400"></i><a href="https://wa.me/525526586386">Tel: +52 55 26 58 63 86</a</li>
+          <!-- <li><i class="fa-solid fa-envelope mr-2 text-sm text-blue-400"></i>auroramoncada@example.com</li> -->
+          <li><i class="fa-brands fa-whatsapp mr-2 text-sm text-green-400"></i><a href="https://wa.me/525526586386">Pedidos por WhatsApp</a></li>
+          <li><i class="fa-brands fa-instagram mr-2 text-pink-400"></i><a href="https://instagram.com/aurora_moncada_eos"
+              target="_blank" class="hover:underline">Instagram</a></li>
+          <!-- <li><i class="fa-brands fa-facebook mr-2 text-blue-500"></i><a href="https://facebook.com/auroramoncada"
+              target="_blank" class="hover:underline">Facebook</a></li> -->
         </ul>
       </div>
 
+      <!-- Ayuda -->
       <div>
         <h4 class="text-base font-semibold mb-2">Ayuda y Atención</h4>
         <p class="text-gray-300">
           Dudas, pedidos personalizados o información adicional, escríbenos directo por WhatsApp.
         </p>
-        <a href="https://wa.me/5215512345678" target="_blank"
+        <a href="https://wa.me/525526586386" target="_blank"
           class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
           Enviar mensaje
         </a>
       </div>
+
     </div>
 
     <div class="mt-10 text-center text-gray-500 text-xs">

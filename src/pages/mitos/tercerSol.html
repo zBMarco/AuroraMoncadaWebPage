@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../output.css">
+    <title>Aurora Moncada</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="bg-[url('../../public/images/header2.jpg')] bg-cover bg-center shadow-md">
+        <div class="bg-black/50"> <!-- capa oscura opcional -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16 text-white">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="./index.html" class="text-xl font-semibold tracking-wide">
+                            Aurora Moncada
+                        </a>
+                    </div>
+
+                    <!-- Botón móvil -->
+                    <div class="md:hidden relative z-[9999]"> <!-- z-index más alto -->
+                        <button id="menu-toggle" class="relative z-[9999] text-white focus:outline-none">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <!-- Menú desktop -->
+                    <nav class="hidden md:flex space-x-6">
+                        <a href="../index.html" class="hover:text-gray-300 transition">Inicio</a>
+                        <a href="../productos.html" class="hover:text-gray-300 transition">Productos</a>
+                        <a href="../mitosLeyendas.html" class="hover:text-gray-300 transition">Mitos y Leyendas</a>
+                        <a href="../contacto.html" class="hover:text-gray-300 transition">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-64 bg-zinc-900 text-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+        <div class="p-6 space-y-4 flex flex-col">
+            <a href="../index.html" class="hover:text-rose-600 transition">Inicio</a>
+            <a href="../productos.html" class="hover:text-rose-600 transition">Productos</a>
+            <a href="../mitosLeyendas.html" class="hover:text-rose-600transition">Mitos y Leyendas</a>
+            <a href="../contacto.html" class="hover:text-rose-600 transition">Contacto</a>
+        </div>
+    </div>
+
+    <section class="relative w-full h-[50vh]" data-aos="fade-up">
+
+        <img src="../../../public/images/mitosLeyendas/tercerSol.png" alt="Fondo de mitos y leyendas"
+            class="absolute inset-0 w-full h-full object-cover z-0" />
+
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+        <!-- Texto centrado con animación -->
+        <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6" data-aos="fade-up">
+            <h2 class="text-4xl sm:text-5xl font-serif font-semibold text-white drop-shadow-md">
+                Mitos y Leyendas
+            </h2>
+            <p class="mt-4 text-white text-base sm:text-lg max-w-xl font-light drop-shadow-sm">
+                Tercer Sol de Fuego
+            </p>
+            <div class="mt-12">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="flex flex-col md:flex-row items-start gap-10" data-aos="fade-up">
+
+            <!-- Imagen a la izquierda -->
+            <!-- <div class="w-full md:w-1/3 flex-shrink-0 flex justify-center md:block">
+                <img src="../../public/images/productosPrincipales/ChatGPT Image 10 may 2025, 10_37_09 p.m..png"
+                    alt="Estela C de Tres Zapotes"
+                    class="w-full h-auto max-w-xs md:max-w-sm object-contain rounded shadow-md" />
+            </div> -->
+
+
+            <!-- Texto a la derecha -->
+            <div class="flex-1">
+                <h2 class="text-3xl sm:text-4xl font-semibold mb-2 font-serif text-green-600">
+                    Tercer Sol de Fuego
+                </h2>
+
+                <hr class="border-t-2 border-green-400 w-full mb-6 !border-green-400">
+                <div class="w-16 h-[2px] bg-lime-700 mb-6"></div>
+
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    En el Tercer Sol, Xiuhtecuhtli bajó del cielo como una llama de cometa brillante.
+                    La humanidad se volvió ambiciosa y egoísta, y las fuerzas cósmicas, insatisfechas, le encomendaron
+                    quemarlo todo.
+                </p>
+
+                <p class="text-gray-700 mb-4 leading-relaxed italic">
+                    “Huyan, sálvense, busquen una gruta. En breve saldrá lava y caerá fuego del cielo.”
+                </p>
+
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Así fue. La tierra se tiñó de rojo por la sangre y el fuego.
+                    El cielo ardía y los hombres, atrapados en su destrucción, fueron transformados en zopilotes.
+                </p>
+
+                <p class="text-gray-700 font-medium">
+                    <strong>Nahui Quiahutli:</strong> Sol de Fuego
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="bg-black text-white py-12 px-12" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-sm">
+
+            <!-- Marca -->
+            <div>
+                <h3 class="text-2xl font-serif font-semibold mb-2">Aurora Moncada</h3>
+                <p class="text-gray-400 font-light">
+                    Inspiración ancestral plasmada en cada prenda. Textiles con historia y alma.
+                </p>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+                <h4 class="text-base font-semibold mb-2">Contacto</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><i class="fa-solid fa-phone mr-2 text-sm text-green-400"></i><a
+                            href="https://wa.me/525526586386">Tel: +52
+                            55 26 58 63 86</a< /li>
+                            <!-- <li><i class="fa-solid fa-envelope mr-2 text-sm text-blue-400"></i>auroramoncada@example.com</li> -->
+                    <li><i class="fa-brands fa-whatsapp mr-2 text-sm text-green-400"></i><a href="https://wa.me/525526586386?text=Hola%20!%2C%20Estoy%20interesado%20en%20hacer%20una%20compra
+">Pedidos por WhatsApp</a></li>
+                    <li><i class="fa-brands fa-instagram mr-2 text-pink-400"></i><a
+                            href="https://instagram.com/aurora_moncada_eos" target="_blank"
+                            class="hover:underline">Instagram</a></li>
+                    <!-- <li><i class="fa-brands fa-facebook mr-2 text-blue-500"></i><a href="https://facebook.com/auroramoncada"
+              target="_blank" class="hover:underline">Facebook</a></li> -->
+                </ul>
+            </div>
+
+            <!-- Ayuda -->
+            <div>
+                <h4 class="text-base font-semibold mb-2">Ayuda y Atención</h4>
+                <p class="text-gray-300">
+                    Dudas, pedidos personalizados o información adicional, escríbenos directo por WhatsApp.
+                </p>
+                <a href="https://wa.me/525526586386?text=Hola%20!%2C%20Estoy%20interesado%20en%20hacer%20una%20compra
+" target="_blank"
+                    class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+                    Enviar mensaje
+                </a>
+            </div>
+
+        </div>
+
+        <div class="mt-10 text-center text-gray-500 text-xs">
+            &copy; 2025 Aurora Moncada · Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../js/navbar-movil.js"></script>
+    <script src="../../js/swiper.js"></script>
+
+</body>
+
+</html>

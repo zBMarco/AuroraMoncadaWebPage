@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aurora Moncada - Producto</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../output.css">
+  <title>Aurora Moncada</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Teko:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Raleway', sans-serif;
     }
 
-    /* Oculta scroll solo visualmente, pero funcional */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
+
     .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
   </style>
-  <script>
-    function toggleSection(id) {
-      const content = document.getElementById(id);
-      content.classList.toggle('hidden');
-    }
-  </script>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
 
-  <!-- Header -->
   <header class="bg-[url('../../public/images/header2.jpg')] bg-cover bg-center shadow-md">
     <div class="bg-black/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16 text-white">
-          <div class="flex-shrink-0">
-            <a href="./index.html" class="text-xl font-semibold tracking-wide">
-              Aurora Moncada
-            </a>
-          </div>
+          <a href="./index.html" class="text-xl font-semibold tracking-wide">Aurora Moncada</a>
           <div class="md:hidden relative z-[9999]">
             <button id="menu-toggle" class="relative z-[9999] text-white focus:outline-none">
               <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,66 +46,64 @@
             </button>
           </div>
           <nav class="hidden md:flex space-x-6">
-            <a href="./index.html" class="hover:text-gray-300 transition">Inicio</a>
-            <a href="./productos.html" class="hover:text-gray-300 transition">Productos</a>
-            <a href="./mitosLeyendas.html" class="hover:text-gray-300 transition">Mitos y Leyendas</a>
-            <a href="./contacto.html" class="hover:text-gray-300 transition">Contacto</a>
+            <a href="../index.html" class="hover:text-gray-300 transition">Inicio</a>
+            <a href="../productos.html" class="hover:text-gray-300 transition">Productos</a>
+            <a href="../mitosLeyendas.html" class="hover:text-gray-300 transition">Mitos y Leyendas</a>
+            <a href="../contacto.html" class="hover:text-gray-300 transition">Contacto</a>
           </nav>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Main -->
-  <main class="w-full flex flex-col md:grid md:grid-cols-[3fr_1.2fr] min-h-screen">
-
-
-    <!-- Galería de imágenes en dos filas -->
-<!-- Contenedor común con estructura responsive -->
-  
-    <div class="hidden md:block no-scrollbar md:overflow-y-scroll md:h-screen">
-        <div class="grid grid-cols-2 gap-1 md:h-screen">
-          <img src="../../public/images/productosPrincipales/Prenda2.png" class="w-full h-full object-cover p-2" />
-          <img src="../../public/images/productosPrincipales/Prenda2.1.png" class="w-full h-full object-cover p-2" />
-        </div>
-        <div class="grid grid-cols-2 gap-1 md:h-screen">
-          <img src="../../public/images/productosPrincipales/Prenda2Modelo.png" class="w-full h-full object-cover p-2" />
-          <img src="../../public/images/productosPrincipales/Prenda2Modelo1.png" class="w-full h-full object-cover p-2" />
-        </div>
+  <section class="flex-grow w-full md:grid md:grid-cols-[3fr_1.2fr]">
+    <div class="hidden md:block no-scrollbar md:overflow-y-auto">
+      <div class="grid grid-cols-2 gap-1">
+        <img src="../../../public/images/productosPrincipales/Prenda2.png" class="w-full h-full object-cover p-2" />
+        <img src="../../../public/images/productosPrincipales/Prenda2.1.png" class="w-full h-full object-cover p-2" />
       </div>
-      
-  
-    <!-- Carrusel horizontal (solo visible en móviles) -->
-    <div class="md:hidden flex overflow-x-auto snap-x snap-mandatory space-x-4 p-4 no-scrollbar">
-      <img src="../../public/images/productosPrincipales/Prenda2.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../public/images/productosPrincipales/Prenda2.1.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../public/images/productosPrincipales/Prenda2Modelo.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../public/images/productosPrincipales/Prenda2Modelo1.png" class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <div class="grid grid-cols-2 gap-1">
+        <img src="../../../public/images/productosPrincipales/Prenda2Modelo.png"
+          class="w-full h-full object-cover p-2" />
+        <img src="../../../public/images/productosPrincipales/Prenda2Modelo1.png"
+          class="w-full h-full object-cover p-2" />
+      </div>
     </div>
-  
-  </div>
-    
-    <!-- Detalles del producto (fijo al hacer scroll) -->
-    <div class="p-8 space-y-6 bg-white sticky top-0 self-start h-screen overflow-y-auto">
-      <!-- Título y precio centrados -->
+
+    <div class="md:hidden flex overflow-x-auto snap-x snap-mandatory space-x-4 p-4 no-scrollbar">
+      <img src="../../../public/images/productosPrincipales/Prenda2.png"
+        class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <img src="../../../public/images/productosPrincipales/Prenda2.1.png"
+        class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <img src="../../../public/images/productosPrincipales/Prenda2Modelo.png"
+        class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+      <img src="../../../public/images/productosPrincipales/Prenda2Modelo1.png"
+        class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
+    </div>
+
+    <div class="p-8 space-y-6 bg-white">
       <div class="text-center">
-        <h2 class="text-3xl font-bold">Camisa blanca de manga larga</h2>
-        <p class="text-xl text-green-600 font-semibold mt-2">MXN 100</p>
+        <h2 class="text-3xl font-bold">El Universo Voz De Estrella</h2>
+        <p class="text-xl text-green-600 font-semibold mt-2">MXN 1,100.00</p>
       </div>
-  
-      <!-- Secciones a la izquierda -->
+
       <div class="space-y-3 w-full">
+        <!-- Descripción / Composición -->
         <div>
-          <button onclick="toggleSection('desc')" class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
-            Descripción
+          <button onclick="toggleSection('desc')"
+            class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
+            Composición
           </button>
-          <div id="desc" class="mt-2 hidden text-sm text-gray-700">
-            Camisa 100% algodón, corte relajado y cómodo.
+          <div id="desc" class="mt-2 hidden text-sm text-gray-700 leading-relaxed">
+            <p><strong>Tejido principal:</strong> 96% poliéster</p>
+            <p><strong>Detalle:</strong> 4% fibras metalizadas</p>
           </div>
         </div>
-  
+
+        <!-- Detalles -->
         <div>
-          <button onclick="toggleSection('detalles')" class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
+          <button onclick="toggleSection('detalles')"
+            class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
             Detalles
           </button>
           <div id="detalles" class="mt-2 hidden text-sm text-gray-700">
@@ -119,106 +113,104 @@
             </ul>
           </div>
         </div>
-  
+
+        <!-- Leyenda -->
         <div>
-          <button onclick="toggleSection('leyenda')" class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
+          <button onclick="toggleSection('leyenda')"
+            class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
             Leyenda
           </button>
-          <div id="leyenda" class="mt-2 hidden text-sm italic text-gray-600 text-left">
-            El que la usa emite paz y confianza.
+          <div id="leyenda" class="mt-2 hidden text-sm italic text-gray-600 text-left leading-relaxed">
+            <p class="text-gray-300 text-sm leading-relaxed">
+                        En el Quinto Sol, los dioses nos dieron una última oportunidad. Solo si escuchamos nuestro
+                        corazón y vivimos con creatividad, podremos cumplir el propósito del Teotl.
+                    </p>
           </div>
         </div>
-      </div>
-  
-      <!-- Selector de tamaño -->
-      <div class="w-full space-y-4 mt-4">
         <div>
-          <label class="block mb-2 font-medium text-left">Tamaño</label>
-          <div id="tallas" class="flex justify-start gap-2">
-            <button data-talla="CH" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">CH</button>
-            <button data-talla="M" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">M</button>
-            <button data-talla="L" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">L</button>
-            <button data-talla="XL" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">XL</button>
-          </div>
+          <a href="https://wa.me/525574910746?text=Hola%20!%20%F0%9F%91%8B%0AEstoy%20interesado%20en%20hacer%20una%20compra.%20%F0%9F%9B%92
+" target="_blank"
+            class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+            Realizar Compra
+          </a>
         </div>
-  
-        <button class="block w-full bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
-          AGREGAR A LA CESTA
-        </button>
       </div>
     </div>
-  
-  </main>
-  
-  <!-- Script -->
-  <script>
-    function toggleSection(id) {
-      document.getElementById(id).classList.toggle('hidden');
-    }
-  
-    document.querySelectorAll('.talla-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.talla-btn').forEach(b => {
-          b.classList.remove('bg-black', 'text-white');
-          b.classList.add('bg-white', 'text-black');
-        });
-  
-        btn.classList.add('bg-black', 'text-white');
-        btn.classList.remove('bg-white', 'text-black');
-  
-        console.log("Talla seleccionada:", btn.getAttribute('data-talla'));
-      });
-    });
-  </script>
-  
-  <!-- No mostrar barra de scroll -->
-  <style>
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-  
-  <!-- Footer -->
+
+
+    <!-- <div class="w-full space-y-4 mt-4">
+        <label class="block mb-2 font-medium text-left">Tamaño</label>
+        <div id="tallas" class="flex justify-start gap-2">
+          <button data-talla="CH" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">CH</button>
+          <button data-talla="M" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">M</button>
+          <button data-talla="L" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">L</button>
+          <button data-talla="XL" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">XL</button>
+        </div>
+        <button class="block w-full bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">AGREGAR A LA CESTA</button>
+      </div> -->
+    <div class="w-full space-y-4 mt-4">
+      <!-- <div>
+        <label class="block mb-2 font-medium text-left">Tamaño</label>
+        <div id="tallas" class="flex justify-start gap-2">
+          <button data-talla="CH" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">CH</button>
+          <button data-talla="M" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">M</button>
+          <button data-talla="L" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">L</button>
+          <button data-talla="XL" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">XL</button>
+        </div>
+      </div>
+
+      <button class="block w-full bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
+        REALIZAR PEDIDO
+      </button>
+    </div> -->
+
+    </div>
+  </section>
+
   <footer class="bg-black text-white py-12 px-12">
     <div class="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-sm">
       <div>
         <h3 class="text-2xl font-serif font-semibold mb-2">Aurora Moncada</h3>
-        <p class="text-gray-400 font-light">
-          Inspiración ancestral plasmada en cada prenda. Textiles con historia y alma.
+        <p class="text-gray-400 font-light">Inspiración ancestral plasmada en cada prenda. Textiles con historia y alma.
         </p>
       </div>
-
       <div>
         <h4 class="text-base font-semibold mb-2">Contacto</h4>
         <ul class="space-y-2 text-gray-300">
-          <li>Tel: +52 55 1234 5678</li>
-          <li>auroramoncada@example.com</li>
-          <li>Pedidos por WhatsApp</li>
-          <li><a href="https://instagram.com/auroramoncada" target="_blank" class="hover:underline">Instagram</a></li>
-          <li><a href="https://facebook.com/auroramoncada" target="_blank" class="hover:underline">Facebook</a></li>
+          <li><i class="fa-solid fa-phone mr-2 text-sm text-green-400"></i><a href="https://wa.me/525526586386">Tel: +52
+              55 26 58 63 86</a></li>
+          <li><i class="fa-brands fa-whatsapp mr-2 text-sm text-green-400"></i><a
+              href="https://wa.me/525526586386">Pedidos por WhatsApp</a></li>
+          <li><i class="fa-brands fa-instagram mr-2 text-pink-400"></i><a
+              href="https://instagram.com/aurora_moncada_eos" target="_blank" class="hover:underline">Instagram</a></li>
         </ul>
       </div>
-
       <div>
         <h4 class="text-base font-semibold mb-2">Ayuda y Atención</h4>
-        <p class="text-gray-300">
-          Dudas, pedidos personalizados o información adicional, escríbenos directo por WhatsApp.
+        <p class="text-gray-300">Dudas, pedidos personalizados o información adicional, escríbenos directo por WhatsApp.
         </p>
-        <a href="https://wa.me/5215512345678" target="_blank"
-          class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
-          Enviar mensaje
-        </a>
+        <a href="https://wa.me/525526586386" target="_blank"
+          class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">Enviar
+          mensaje</a>
       </div>
     </div>
-
-    <div class="mt-10 text-center text-gray-500 text-xs">
-      &copy; 2025 Aurora Moncada · Todos los derechos reservados.
+    <div class="mt-10 text-center text-gray-500 text-xs">&copy; 2025 Aurora Moncada · Todos los derechos reservados.
     </div>
   </footer>
 
+  <script>
+    function toggleSection(id) {
+      document.getElementById(id).classList.toggle('hidden');
+    }
+    document.querySelectorAll('.talla-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.talla-btn').forEach(b => b.classList.remove('bg-black', 'text-white'));
+        document.querySelectorAll('.talla-btn').forEach(b => b.classList.add('bg-white', 'text-black'));
+        btn.classList.add('bg-black', 'text-white');
+        btn.classList.remove('bg-white', 'text-black');
+      });
+    });
+  </script>
 </body>
+
 </html>
