@@ -37,7 +37,7 @@
     <div class="bg-black/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16 text-white">
-          <a href="./index.html" class="text-xl font-semibold tracking-wide">Aurora Moncada</a>
+          <a href="../../index.html" class="text-xl font-semibold tracking-wide">Aurora Moncada</a>
           <div class="md:hidden relative z-[9999]">
             <button id="menu-toggle" class="relative z-[9999] text-white focus:outline-none">
               <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@
             </button>
           </div>
           <nav class="hidden md:flex space-x-6">
-            <a href="../index.html" class="hover:text-gray-300 transition">Inicio</a>
+            <a href="../../index.html" class="hover:text-gray-300 transition">Inicio</a>
             <a href="../productos.html" class="hover:text-gray-300 transition">Productos</a>
             <a href="../mitosLeyendas.html" class="hover:text-gray-300 transition">Mitos y Leyendas</a>
             <a href="../contacto.html" class="hover:text-gray-300 transition">Contacto</a>
@@ -59,85 +59,79 @@
   <section class="flex-grow w-full md:grid md:grid-cols-[3fr_1.2fr]">
     <div class="hidden md:block no-scrollbar md:overflow-y-auto">
       <div class="grid grid-cols-2 gap-1">
-        <img src="../../../public/images/productosPrincipales/Prenda4.png" class="w-full h-full object-cover p-2" />
-        <img src="../../../public/images/productosPrincipales/Prenda4.1.png" class="w-full h-full object-cover p-2" />
-        </div3 <div class="grid grid-cols-2 gap-1">
-        <img src="../../../public/images/productosPrincipales/Prenda4Modelo.png" class="w-full h-full object-cover p-2"
-          /4 <img src="../../../public/images/productosPrincipales/Prenda4Modelo1.png"
+        <img src="../../../public/images/productosPrincipales/Prenda1.png" class="w-full h-full object-cover p-2" />
+        <img src="../../../public/images/productosPrincipales/Prenda1.1.png" class="w-full h-full object-cover p-2" />
+      </div>
+      <div class="grid grid-cols-2 gap-1">
+        <img src="../../../public/images/productosPrincipales/Prenda1Modelo.png"
+          class="w-full h-full object-cover p-2" />
+        <img src="../../../public/images/productosPrincipales/Prenda1Modelo1.png"
           class="w-full h-full object-cover p-2" />
       </div>
     </div>
 
     <div class="md:hidden flex overflow-x-auto snap-x snap-mandatory space-x-4 p-4 no-scrollbar">
-      <img src="../../../public/images/productosPrincipales/Prenda4.png"
+      <img src="../../../public/images/productosPrincipales/Prenda1.png"
         class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../../public/images/productosPrincipales/Prenda4.1.png"
+      <img src="../../../public/images/productosPrincipales/Prenda1.1.png"
         class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../../public/images/productosPrincipales/Prenda4Modelo.png"
+      <img src="../../../public/images/productosPrincipales/Prenda1Modelo.png"
         class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
-      <img src="../../../public/images/productosPrincipales/Prenda4Modelo1.png"
+      <img src="../../../public/images/productosPrincipales/Prenda1Modelo1.png"
         class="w-[85%] flex-shrink-0 snap-center rounded-xl object-cover" />
     </div>
 
     <div class="p-8 space-y-6 bg-white">
       <div class="text-center">
-        <h2 class="text-3xl font-bold">El Universo Voz De Estrella Terciopelo</h2>
+        <h2 class="text-3xl font-bold">Telar</h2>
         <p class="text-xl text-green-600 font-semibold mt-2">MXN 1,570.00</p>
       </div>
 
       <div class="space-y-3 w-full">
-        <!-- Descripción / Composición -->
         <div>
           <button onclick="toggleSection('desc')"
             class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
-            Composición
+            Descripción
           </button>
           <div id="desc" class="mt-2 hidden text-sm text-gray-700 leading-relaxed">
-            <p><strong>Material principal:</strong> 98% poliéster / 2% Fibras Metalizadas</p>
+            <p><strong>Material principal:</strong> 100% poliéster.</p>
             <p><strong>Espalda:</strong> Tejido a mano en telares, hecho en México.</p>
             <p><strong>Frente:</strong> 100% algodón.</p>
           </div>
         </div>
 
-        <!-- Detalles -->
         <div>
           <button onclick="toggleSection('detalles')"
-            class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
-            Detalles
-          </button>
+            class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">Detalles</button>
           <div id="detalles" class="mt-2 hidden text-sm text-gray-700">
             <ul class="list-disc pl-5 text-left">
-              <li>Corte unisex</li>
-              <li>Hecho en México</li>
+              <p><strong>Material:</strong> 100% poliéster.</p>
+              <p><strong>Espalda:</strong> Tejido a mano en telares, hecho en México.</p>
+              <p><strong>Frente:</strong> 100% algodón.</p>
             </ul>
           </div>
         </div>
-
-        <!-- Leyenda -->
         <div>
           <button onclick="toggleSection('leyenda')"
             class="w-full text-left font-semibold text-lg border-b pb-2 hover:text-green-600 transition">
             Leyenda
           </button>
           <div id="leyenda" class="mt-2 hidden text-sm italic text-gray-600 text-left leading-relaxed">
-             <p class="text-gray-300 text-sm leading-relaxed">
-                        En el Quinto Sol, los dioses nos dieron una última oportunidad. Solo si escuchamos nuestro
-                        corazón y vivimos con creatividad, podremos cumplir el propósito del Teotl.
-                    </p>
+            En el Segundo sol, Quetzalcóatl con su cola de serpiente con plumaje verde como el quetzal, fue el enviado.
+            Utiliza el viento y destrúyelos, solo salva a la mejor pareja.
+            Así pues, hizo Quetzalcóatl advirtiendo:<br><br>
+            <em>“Escuchen atentos la voz de los vientos, ahora son suaves y tersos, pero en unas horas se soltarán
+              terribles tornados y vientos.
+              Corran, busquen una cueva y sálvense.”</em><br><br>
+            El viento resoplaba tan fuerte que los hombres fueron convertidos en monos.<br><br>
+            <strong>Nahui Ehecatl – Tonatiuh</strong><br>
+            <strong>Ehécatl: Sol de Viento</strong>
           </div>
         </div>
-        <div>
-          <a href="https://wa.me/525574910746?text=Hola%20!%20%F0%9F%91%8B%0AEstoy%20interesado%20en%20hacer%20una%20compra.%20%F0%9F%9B%92
-" target="_blank"
-            class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
-            Realizar Compra
-          </a>
-        </div>
+
       </div>
-    </div>
 
-
-    <!-- <div class="w-full space-y-4 mt-4">
+      <!-- <div class="w-full space-y-4 mt-4">
         <label class="block mb-2 font-medium text-left">Tamaño</label>
         <div id="tallas" class="flex justify-start gap-2">
           <button data-talla="CH" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">CH</button>
@@ -147,8 +141,8 @@
         </div>
         <button class="block w-full bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">AGREGAR A LA CESTA</button>
       </div> -->
-    <div class="w-full space-y-4 mt-4">
-      <!-- <div>
+      <div class="w-full space-y-4 mt-4">
+        <!-- <div>
         <label class="block mb-2 font-medium text-left">Tamaño</label>
         <div id="tallas" class="flex justify-start gap-2">
           <button data-talla="CH" class="talla-btn border px-4 py-2 bg-white text-black hover:bg-black hover:text-white transition">CH</button>
@@ -162,8 +156,14 @@
         REALIZAR PEDIDO
       </button>
     </div> -->
-
-    </div>
+        <div>
+          <a href="https://wa.me/525574910746?text=Hola%20!%20%F0%9F%91%8B%0AEstoy%20interesado%20en%20hacer%20una%20compra.%20%F0%9F%9B%92
+" target="_blank"
+            class="inline-block mt-4 px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+            Realizar Compra
+          </a>
+        </div>
+      </div>
   </section>
 
   <footer class="bg-black text-white py-12 px-12">
